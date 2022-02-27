@@ -1,0 +1,145 @@
+db.employees.find({}, {first_name: 1, last_name: 2, _id: 0}) 
+
+const employees = [
+        { 
+		first_name: "Miguel", 
+		last_name: "Lo",
+		email: "MiguelLo@YOLO.com",
+		job_title: "Software Engineering Instructor",
+		address: {
+			street: "5th Ave",
+        		city: "New York",
+        		state: "NY",
+        		zip: 10010
+			} 
+	   },
+        {
+		first_name: "Bunny", 
+		last_name: "sal",
+		email: "bunny.sal@gmail.com",
+		job_title: "Independent carpenter",
+		address: {
+			street: "75 Fieldcrest Ave",
+        		city: "Edison",
+        		state: "NJ",
+        		zip: 08837
+			} 
+	   },
+        { 
+		first_name: "Ron", 
+		last_name: "Adam",
+		email: "adam.ron@gmail.com",
+		job_title: "Doctor",
+		address: {
+			street: "20 Observatory Rd",
+        		city: "Los Angeles",
+        		state: "CA",
+        		zip: 90027
+			} 
+		
+		},
+        {
+		first_name: "Lora", 
+		last_name: "Smith",
+		email: "lora.email@gmail.com",
+		job_title: "Cloud Architect",
+		address: {
+			street: "96 Pompton Ave 2nd Floor",
+        		city: "Charlotte",
+        		state: "NC",
+        		zip: 28202
+			} 
+	  },
+        {	
+		first_name: "Ludkee", 
+		last_name: "Aleks",
+		email: "ludkee.aleks@gmail.com",
+		job_title: "Cloud Architect",
+		address: {
+			street: "50 Morgon Ave",
+        		city: "Chattanooga",
+        		state: "TN",
+        		zip: 37415
+			}
+		
+	 }
+    ]  
+
+{	
+		first_name: "Tom", 
+		last_name: "Jerry",
+		email: "tom.jerry@gmail.com",
+		job_title: "Market Analyst",
+		address: {
+			street: "4245 E Berry St",
+        		city: "Fort Worth",
+        		state: "TX",
+        		zip: 76105
+			}
+
+		
+	 }  
+
+{	
+		first_name: "Jesse", 
+		last_name: "Xiao",
+		email: "xios.j@gmail.com",
+		job_title: "Lawyer",
+		address: {
+			street: "26120 104th Ave SE",
+        		city: "Kent",
+        		state: "WA",
+        		zip: 98030
+			}
+
+	 }
+
+{	
+		first_name: "Alex", 
+		last_name: "Smith",
+		email: "smith.alex@gmail.com",
+		job_title: "Nurse",
+		address: {
+			street: "3640 Colonel Glenn Hwy",
+        		city: "Dayton",
+        		state: "OH",
+        		zip: 45435
+			}
+
+		
+	 }
+{	
+		first_name: "Christian", 
+		last_name: "Koblick",
+		email: "chris.kob@gmail.com",
+		job_title: "Senior Clerk",
+		address: {
+			street: "3100 Hamilton Blvd",
+        		city: "South Plainfield",
+        		state: "NJ",
+        		zip: 07080
+			}
+		
+	 }
++++++++++++++++++++++++++++
+
+faker.js
+___________________
+
+npm i faker ****
+
+
+
+
++++++++++++++++++++++++++++++++
+
+https://github.com/faker-js/faker
+
+npm install @faker-js/faker --save-dev
+
+const { faker } = require('@faker-js/faker');
+const randomName = faker.name.findName(); // Rowan Nikolaus
+const randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
+const randomCard = faker.helpers.createCard(); // random contact card containing many properties
+
+
